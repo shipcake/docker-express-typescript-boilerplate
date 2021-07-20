@@ -1,0 +1,10 @@
+services:
+    api:
+        build: 
+            context: ./api
+            dockerfile: Dockerfile.env
+        container_name: test_api
+        ports:
+            - "3500:3500"
+        volumes: 
+            - ./api:/api
